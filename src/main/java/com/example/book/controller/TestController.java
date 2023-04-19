@@ -1,5 +1,6 @@
 package com.example.book.controller;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,7 +12,7 @@ import java.util.Map;
 public class TestController {
 
     @GetMapping(value="/test")
-    public ResponseEntity<Map> test(){
+    public ResponseEntity test(){
         String test = "테스트";
         String test2 = "테스트2";
 
@@ -20,7 +21,7 @@ public class TestController {
         testMap.put("2", test2);
 
 
-        return ResponseEntity.ok(testMap);
+        return new ResponseEntity<>(testMap, HttpStatus.OK);
     }
 
 }
