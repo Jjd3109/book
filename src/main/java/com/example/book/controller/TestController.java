@@ -14,7 +14,7 @@ public class TestController {
     @GetMapping(value="/test")
     public ResponseEntity test(){
         String test = "테스트";
-        String test2 = "테스트2";
+        String test2 = "테스트3";
 
         Map<String, String> testMap = new HashMap<String, String>();
         testMap.put("1", test);
