@@ -16,7 +16,7 @@ public class TestController {
         String test = "테스트";
         String test2 = "테스트2";
 
-        Map<String, Object> testMap = new HashMap<String, Object>();
+        Map<String, String> testMap = new HashMap<String, String>();
         testMap.put("1", test);
         testMap.put("2", test2);
 
