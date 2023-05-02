@@ -11,7 +11,7 @@ import java.util.Map;
 @RestController
 public class TestController {
 
-    @GetMapping(value="/test")
+    @GetMapping(value="/test123")
     public ResponseEntity test(){
         String test = "테스트";
         String test2 = "테스트3";
@@ -22,6 +22,12 @@ public class TestController {
 
 
         return new ResponseEntity<>(testMap, HttpStatus.OK);
+    }
+
+    @GetMapping("/index")
+    public String index(){
+
+        return "index";
     }
 
 }
