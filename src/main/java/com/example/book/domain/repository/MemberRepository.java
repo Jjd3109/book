@@ -1,6 +1,6 @@
 package com.example.book.domain.repository;
 
-import com.example.book.domain.Member;
+import com.example.book.domain.entity.Member;
 import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;

@@ -1,6 +1,6 @@
 package com.example.book.domain.repository;
 
-import com.example.book.domain.Member;
+import com.example.book.domain.entity.Member;
 import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

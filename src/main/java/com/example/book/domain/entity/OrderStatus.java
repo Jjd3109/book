@@ -1,4 +1,4 @@
-package com.example.book.domain;
+package com.example.book.domain.entity;
 
 public enum OrderStatus {
 

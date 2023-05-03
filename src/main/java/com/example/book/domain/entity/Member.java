@@ -1,4 +1,4 @@
-package com.example.book.domain;
+package com.example.book.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -12,10 +12,12 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@ToString
 public class Member {
 
     @Id
     @GeneratedValue
+    @Column(name="member_id")
     private Long id;
 
     private String name;

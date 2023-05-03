@@ -6,22 +6,23 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.*;
 
-@Entity
-@Builder //빌더패턴 !!
 @Getter
-@AllArgsConstructor //생성자를 전부 만들어준다
+@Entity
+@Builder
+@AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString
-public class Note {
+public class Book {
 
     @Id
     @GeneratedValue
-    @Column(name="note_id")
-    private Long id;
+    @Column(name = "book_id")
+    private Long id; //책번호
 
-    private String title;
+    private String name; //책이름
 
-    private String content;
+    private String author; //저자
 
+    private String detail; // 책내용
 
 }
